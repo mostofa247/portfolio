@@ -1,16 +1,63 @@
-import React from "react";
+import React, { useState } from "react";
 import ContactItem from "../Components/ContactItem";
 import phone from "../img/phone.svg";
 import email from "../img/emailme.svg";
 import location from "../img/location.svg";
 import Tittle from "../Components/Tittle";
+import "../styles/contact.css";
+import emailjs from "emailjs-com";
 
 function ContactPage() {
+  function formSubmit(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_i00mnvm",
+        "template_kbk737a",
+        e.target,
+        "user_JVeSPeoIwYaD9vOwgJWCz"
+      )
+      .then(
+        (result) => {
+          console.log("Your message has been successfully submitted!");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  }
+
   return (
     <div>
       <div className="title">
         <Tittle title={"Contact Me"} span={"Contact Me"} />
       </div>
+      <form onSubmit={formSubmit}>
+        <input
+          name="name"
+          type="text"
+          required
+          class="feedback-input"
+          placeholder="Name"
+        />
+        <input
+          name="email"
+          type="text"
+          class="feedback-input"
+          required
+          placeholder="Email"
+        />
+        <textarea
+          name="message"
+          required
+          class="feedback-input"
+          placeholder="Comment"
+        ></textarea>
+        <input type="submit" value="SUBMIT" />
+      </form>
+
       <div className="ContactPage">
         <div className="map-sect">
           <iframe
