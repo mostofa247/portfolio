@@ -1,6 +1,7 @@
 import port2 from "../img/portImages/port2.png";
 import port3 from "../img/portImages/Book-Shop.png";
 import port1 from "../img/portImages/port1.png";
+import port4 from "../img/portImages/doctor-portal.png";
 
 const portfolios = [
   {
@@ -32,6 +33,16 @@ const portfolios = [
     icon2: "G",
     image: port1,
     title: "Dashboard reactJS project",
+  },
+  {
+    id: 4,
+    category: "Mern Stack",
+    link1: "https://log-ino.web.app/",
+    link2: "https://github.com/mostofa247/-doctor-portal-Client-side.git",
+    icon1: "L",
+    icon2: "G",
+    image: port4,
+    title: "Doctor Portal Project",
   },
 ];
 
