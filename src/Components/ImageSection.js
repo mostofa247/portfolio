@@ -36,7 +36,7 @@ function ImageSection() {
         </div>
         <br></br>
         <a
-          href="https://drive.google.com/file/d/14iGbxEBvSCp-j8_hUX3Lm2gA4RMIy-n0/view?usp=sharing"
+          href="https://drive.google.com/file/d/1IHtb1olQ_Po10Zx9NQXcGAKjX-MBX33T/view?usp=sharing"
           className="btn"
         >
           Download Cv
