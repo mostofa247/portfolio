@@ -34,6 +34,8 @@ function ContactPage() {
       <div className="title">
         <Tittle title={"Contact Me"} span={"Contact Me"} />
       </div>
+      <br />
+      <br />
       <form onSubmit={formSubmit}>
         <input
           name="name"
