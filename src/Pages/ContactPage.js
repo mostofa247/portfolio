@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import ContactItem from "../Components/ContactItem";
 import phone from "../img/phone.svg";
 import email from "../img/emailme.svg";
