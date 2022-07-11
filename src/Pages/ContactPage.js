@@ -13,10 +13,10 @@ function ContactPage() {
 
     emailjs
       .sendForm(
-        "service_i00mnvm",
-        "template_kbk737a",
+        "service_muhts97",
+        "template_7jzy5au",
         e.target,
-        "user_JVeSPeoIwYaD9vOwgJWCz"
+        "MntIc7iuFXH2Lpehz"
       )
       .then(
         (result) => {
