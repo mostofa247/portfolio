@@ -3,6 +3,7 @@ import port3 from "../img/portImages/Book-Shop.png";
 import port1 from "../img/portImages/port1.png";
 import port4 from "../img/portImages/doctor-portal.png";
 import bookStore from "../img/portImages/book-store.png";
+import Registration from "../img/portImages/SignIn-SignUp.png";
 
 const portfolios = [
   {
@@ -54,6 +55,16 @@ const portfolios = [
     icon2: "G",
     image: port4,
     title: "Doctor Portal Project",
+  },
+  {
+    id: 6,
+    category: "Html & JS",
+    link1: "https://mostofa247.github.io/signin-sihnup-page/",
+    link2: "https://github.com/mostofa247/signin-sihnup-page.git",
+    icon1: "L",
+    icon2: "G",
+    image: Registration,
+    title: "Html css Javascript Signup & SignIn project",
   },
 ];
 
